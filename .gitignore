@@ -1,2 +1,10 @@
+#folder
+venv
+.idea/
 
-venv/
+#database
+db.sqlite3
+
+
+#migration
+blog/migraton/
