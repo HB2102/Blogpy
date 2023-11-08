@@ -8,3 +8,7 @@ db.sqlite3
 
 #migration
 blog/migraton/
+
+
+#static files
+files/
