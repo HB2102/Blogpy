@@ -12,3 +12,6 @@ blog/migraton/
 
 #static files
 files/
+
+#staticfiles
+/staticfiles
