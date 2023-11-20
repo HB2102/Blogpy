@@ -23,13 +23,14 @@ class UserProfile(models.Model):
         return self.user.first_name + " " + self.user.last_name
 
 
+
 class Article(models.Model):
     title = models.CharField(max_length=128, null=False,blank=False)
     cover = models.FileField(upload_to='files/article_cover', null=False,blank=False, validators=[validate_file_extentions])
     content = RichTextField()
     created_at = models.DateTimeField(default=datetime.now, blank=False)
     category = models.ForeignKey('Category', on_delete=models.CASCADE)
-    author = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    author = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
