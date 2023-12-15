@@ -7,5 +7,6 @@ urlpatterns = [
     path(r'', views.IndexPage.as_view(), name='index'),
     path(r'contact/', views.ContactPage.as_view(), name='contact'),
 
+    path(r'article/', views.SingleArticleAPIView.as_view(), name='single_article'),
     path(r'article/all/', views.AllArticleAPIView.as_view(),name='all_articles'),
 ]
