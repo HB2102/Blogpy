@@ -11,5 +11,6 @@ urlpatterns = [
     path(r'article/search/', views.SearchArticleAPIView.as_view(), name='search_articles'),
     path(r'article/submit/', views.SubmitArticleAPIView.as_view(), name='submit_articles'),
 
-    path(r'article/update_cover/', views.UpdateArticleAPIView.as_view(), name='Update_articles'),
+    path(r'article/update_cover/', views.UpdateArticleAPIView.as_view(), name='update_articles'),
+    path(r'article/delete/', views.DeleteArticleAPIView.as_view(), name='delete_articles'),
 ]
