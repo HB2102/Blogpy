@@ -10,4 +10,6 @@ urlpatterns = [
     path(r'article/all/', views.AllArticleAPIView.as_view(), name='all_articles'),
     path(r'article/search/', views.SearchArticleAPIView.as_view(), name='search_articles'),
     path(r'article/submit/', views.SubmitArticleAPIView.as_view(), name='submit_articles'),
+
+    path(r'article/update_cover/', views.UpdateArticleAPIView.as_view(), name='Update_articles'),
 ]
