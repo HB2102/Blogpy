@@ -9,4 +9,5 @@ urlpatterns = [
 
     path(r'article/', views.SingleArticleAPIView.as_view(), name='single_article'),
     path(r'article/all/', views.AllArticleAPIView.as_view(),name='all_articles'),
+    path(r'article/search/', views.SearchArticleAPIView.as_view(),name='search_articles'),
 ]
